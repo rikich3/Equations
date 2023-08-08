@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -17,6 +18,8 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("primary"), 640, 480);
+        //scene.setFill(Color.rgb(100, 100, 100, 255));
+        //scene.setFill(Color.web("#81c483"));
         stage.setTitle("RM_TIF");
         stage.setScene(scene);
         stage.show();

@@ -1,0 +1,6 @@
+como seria con un hashmap?
+tendriamos que las llaves serían:
+    digitos, literales, el x, los operadores  //btw los tabuladores ya estan en forma de whitespaces
+pero que serian sus valores? claramente estos indican acciones, por ejemplo un + depende del anterior character, puede
+ser un coeficiente, un signo, en el caso de signo, conlleva algunas acciones adicionales, como crear el nuevo termino.
+Luego como realizar este
