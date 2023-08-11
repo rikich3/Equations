@@ -21,8 +21,10 @@ public class PrimaryController {
     @FXML Text warnings;
     @FXML
     private void switchToSecondary() throws IOException {
-        if(Equation.onNewEcu(UserInput.getText()))
+        if(Equation.onNewEcu(UserInput.getText())){
+            SecondaryController.init();
             App.setRoot("secondary");
+        }
         else{
             warnings.setText(Equation.getWarning());
         }
